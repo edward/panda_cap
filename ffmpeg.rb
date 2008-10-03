@@ -6,6 +6,9 @@ namespace :panda do
     ["wget http://downloads.sourceforge.net/lame/lame-398.tar.gz?modtime=1215212728&big_mirror=0",
      "sudo tar -xf lame-398.tar.gz",
      "cd lame-398 && ./configure && make && sudo make install",
+    
+     # Hit a bad Y/n here
+    
      "sudo aptitude install build-essential git-core zlib1g-dev checkinstall libgpac-dev libfaad-dev libfaac-dev liblame-dev libtheora-dev libvorbis-dev gpac subversion",
      "wget http://www.tortall.net/projects/yasm/releases/yasm-0.7.1.tar.gz", # Make video encoding faster
      "tar xzvf yasm-0.7.1.tar.gz",
