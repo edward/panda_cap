@@ -1,8 +1,13 @@
 This is basically a set of Capistrano commands that *should* set-up your server for Panda with MySql.
 
+Note that this setup is intended for a 64-bit server instance. Should you
+choose to use a 32-bit system, edit system.rb appropriately.
+
 It's pretty messy but does work for myself, so it's not all bad.
 
 TO DO A ONE COMMAND INSTALL - cap panda:install
+
+(Note: untested)
 
 Please follow the commands in this order:
 
@@ -33,3 +38,7 @@ cap panda:...
   stop_nginx
   restart_nginx
   update_gems
+
+TODO
+  Add a line to pull in NeroDigitalAudio for neroAac, required for one of
+  the default encoding profiles.
